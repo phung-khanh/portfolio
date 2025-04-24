@@ -4,18 +4,14 @@ import LanguageGraph from "@/features/Home/Components/LanguageGraph";
 import CommitCalendar from "@/features/Project/Components/CommitTree";
 import GitHubStats from "@/features/Project/Components/GitHubStatus";
 import ProjectCard from "@/features/Project/Components/ProjectCard";
-import { fetchAllRepositories } from "@/shared/api/github";
+import {
+  fetchAllRepositories,
+  fetchOrgRepositories,
+} from "@/shared/api/github";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
 import { FaChartPie, FaProjectDiagram } from "react-icons/fa";
-
-export const fetchOrg = async (orgs: string) => {
-  const res = await fetch(`https://api.github.com/orgs/${orgs}/repos`);
-  const repositories = await res.json();
-  console.log(repositories);
-  return repositories;
-};
 
 export default function Projects() {
   interface Repository {
@@ -42,7 +38,7 @@ export default function Projects() {
       try {
         // Pass queryKey as an array
         const personalRepos = await fetchAllRepositories("punhnahk");
-        const orgRepos = await fetchOrg("Team1-DevPlus");
+        const orgRepos = await fetchOrgRepositories("Team1-DevPlus");
 
         if (!Array.isArray(orgRepos)) {
           console.error(

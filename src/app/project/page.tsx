@@ -28,9 +28,9 @@ export default function Projects() {
   const selectedRepos = [
     "DevPlus_QuizWebsiteAI",
     "final",
-    "chuctet2025",
     "noel",
-    "ngocanh",
+    "portfolio",
+    "Enterprise-Web-Development_1640",
   ];
 
   useEffect(() => {
@@ -38,17 +38,18 @@ export default function Projects() {
       try {
         // Pass queryKey as an array
         const personalRepos = await fetchAllRepositories("punhnahk");
-        const orgRepos = await fetchOrgRepositories("Team1-DevPlus");
+        const orgRepos1 = await fetchOrgRepositories("Team1-DevPlus");
+        const orgRepos2 = await fetchOrgRepositories("COMP1640-Greenwich");
 
-        if (!Array.isArray(orgRepos)) {
+        if (!Array.isArray(orgRepos1) || !Array.isArray(orgRepos2)) {
           console.error(
             "Error: Expected an array for orgRepos, but received:",
-            orgRepos
+            orgRepos1
           );
           return;
         }
 
-        const allRepos = [...personalRepos, ...orgRepos];
+        const allRepos = [...personalRepos, ...orgRepos1, ...orgRepos2];
         const filteredRepos = allRepos.filter((repo) =>
           selectedRepos.includes(repo.name)
         );

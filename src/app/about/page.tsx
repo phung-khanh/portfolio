@@ -13,7 +13,14 @@ export default function About() {
   const skills = [
     {
       category: "Frontend",
-      items: ["React", "JavaScript", "TailwindCSS", "HTML/CSS", "Vite"],
+      items: [
+        "ReactJS",
+        "JavaScript",
+        "TypeScript",
+        "TailwindCSS",
+        "HTML/CSS",
+        "Vite",
+      ],
     },
     { category: "Backend", items: ["Node.js", "Express", "MongoDB"] },
     { category: "Tools", items: ["Git", "GitHub", "VS Code", "Figma"] },
@@ -40,13 +47,12 @@ export default function About() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="text-gray-300 text-justify mt-4 max-w-5xl mx-auto leading-relaxed"
         >
-          As an IT senior student at the University of Greenwich Vietnam, I have
-          expertise in C#, .NET Core, ASP.NET, and ReactJS, with experience in
-          building scalable, user-friendly web applications, focusing on
-          innovation, performance, and quality. I am committed to applying my
-          technical skills during my internship to solve real-world problems,
-          continuously improving my knowledge, and contributing to impactful
-          software solutions while aligning with current industry standards.
+          Recent IT graduate from the University of Greenwich Vietnam with
+          hands-on experience in full-stack web development using the MERN
+          stack. Solid foundation in JavaScript, ReactJS, and ExpressJS. Eager
+          to contribute to real-world projects as a junior developer, grow
+          through collaboration and mentorship, and eventually become a skilled
+          software engineer delivering impactful web solutions.
         </motion.p>
 
         {/* Content */}

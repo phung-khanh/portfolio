@@ -18,6 +18,20 @@ export default function Resume() {
 
   const projects = [
     {
+      title: "University Test Exam Website",
+      company: "Devplus Company",
+      year: "Feb 2025 - Apr 2025",
+      technologies: "JavaScript, ReactJS, Antd Design, ",
+      github: "",
+    },
+    {
+      title: "Quiz App - Quiz AI Generation",
+      company: "Devplus Company",
+      year: "Feb 2025 - Mar 2025",
+      technologies: "JavaScript, HTML, CSS ",
+      github: "https://github.com/Team1-DevPlus/DevPlus_QuizWebsiteAI",
+    },
+    {
       title: "Noel Techshop - Electronics Sales Website",
       company: "University of Greenwich",
       year: "Jan 2024 - Dec 2024",
@@ -32,21 +46,15 @@ export default function Resume() {
       github:
         "https://github.com/yourgithub/student-contributionhttps://github.com/COMP1640-Greenwich/Enterprise-Web-Development_1640",
     },
-    {
-      title: "Book Store Website",
-      company: "University of Greenwich",
-      year: "Oct 2023 - Dec 2023",
-      technologies: ".NET Framework, C#, JavaScript, Bootstrap",
-      github: "https://github.com/punhnahk/Selling-Book-MVC",
-    },
   ];
 
   const experience = [
     {
       title: "Intern Developer",
       company: "Devplus Company",
-      year: "Present",
-      technologies: "Full-stack Development, React, NodeJS, Express, MongoDB",
+      year: "Feb 2025 - Apr 2025",
+      technologies:
+        "Full-stack Development, ReactJs, NodeJS, Express, JavaScript",
     },
   ];
 
@@ -58,6 +66,7 @@ export default function Resume() {
     "NodeJS",
     "ExpressJS",
     "MongoDB",
+    "Antd Design",
   ];
 
   return (

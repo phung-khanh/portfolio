@@ -65,10 +65,6 @@ export default function Home() {
           <div className="pb-8 text-2xl">
             <Type />
           </div>
-          {/* <p className="text-lg text-gray-300 mb-6">
-            Frontend Developer specializing in creating beautiful, responsive
-            web applications with React and modern CSS frameworks.
-          </p> */}
           <div className="flex gap-4 justify-center md:justify-start">
             <Link
               href="/about"
@@ -80,7 +76,7 @@ export default function Home() {
               href="/project"
               className="px-6 py-3 rounded-lg border border-blue-500 text-blue-400 hover:bg-blue-600 hover:text-white font-semibold transition shadow-lg"
             >
-              Portfolio
+              All My Projects →
             </Link>
           </div>
           <div className="mt-6">

@@ -12,7 +12,7 @@ export default function Resume() {
     {
       degree: "Upper Second Honour | Information Technology",
       school: "University of Greenwich",
-      year: "2021 - 2026",
+      year: "2021 - 2025",
     },
   ];
 

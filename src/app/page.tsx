@@ -81,7 +81,7 @@ export default function Home() {
           </div>
           <div className="mt-6">
             <a
-              href="https://github.com/punhnahk"
+              href="https://github.com/phung-khanh"
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-400 hover:underline"

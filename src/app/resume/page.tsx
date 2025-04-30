@@ -36,7 +36,7 @@ export default function Resume() {
       company: "University of Greenwich",
       year: "Jan 2024 - Dec 2024",
       technologies: "ReactJS, Tailwind CSS, NodeJS, ExpressJS, MongoDB",
-      github: "https://github.com/punhnahk/final",
+      github: "https://github.com/phung-khanh/final",
     },
     {
       title: "Student Contribution Website",

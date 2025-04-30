@@ -81,7 +81,7 @@ export default function About() {
             {/* Social Links */}
             <div className="flex space-x-6 mt-4">
               <a
-                href="https://github.com/punhnahk"
+                href="https://github.com/phung-khanh"
                 target="_blank"
                 rel="noopener noreferrer"
               >

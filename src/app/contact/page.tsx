@@ -167,7 +167,7 @@ export default function Contact() {
                 <h3 className="text-lg font-medium mb-4">Follow Me</h3>
                 <div className="flex space-x-4">
                   <a
-                    href="https://github.com/punhnahk"
+                    href="https://github.com/phung-khanh"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-gray-700 p-3 rounded-full text-gray-400 hover:text-white hover:bg-gray-600 transition"

@@ -22,7 +22,7 @@ export default function Footer() {
               <FaFacebook className="text-2xl" />
             </a>
             <a
-              href="https://github.com/punhnahk"
+              href="https://github.com/phung-khanh"
               className="hover:text-white transition"
             >
               <FaGithub className="text-2xl" />

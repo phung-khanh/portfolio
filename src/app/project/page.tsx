@@ -37,7 +37,7 @@ export default function Projects() {
     const loadRepos = async () => {
       try {
         // Pass queryKey as an array
-        const personalRepos = await fetchAllRepositories("punhnahk");
+        const personalRepos = await fetchAllRepositories("phung-khanh");
         const orgRepos1 = await fetchOrgRepositories("Team1-DevPlus");
         const orgRepos2 = await fetchOrgRepositories("COMP1640-Greenwich");
 
@@ -145,7 +145,7 @@ export default function Projects() {
                 Contribution Activity
               </h2>
               <div className="bg-gray-800 p-6 rounded-lg">
-                <CommitCalendar username="punhnahk" />
+                <CommitCalendar username="phung-khanh" />
               </div>
             </motion.div>
 
@@ -172,7 +172,7 @@ export default function Projects() {
               <div className="flex flex-col h-full">
                 <h2 className="text-2xl font-semibold mb-4">GitHub Stats</h2>
                 <div className="bg-gray-800 p-6 rounded-lg flex-1 flex items-center justify-center">
-                  <GitHubStats username="punhnahk" />
+                  <GitHubStats username="phung-khanh" />
                 </div>
               </div>
             </motion.div>

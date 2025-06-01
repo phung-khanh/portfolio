@@ -2,7 +2,6 @@
 /* eslint-disable react/no-unescaped-entities */
 "use client";
 
-import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
 import { useState } from "react";
 
@@ -31,19 +30,19 @@ export default function Contact() {
     setSubmitStatus(null); // Reset status on new submission
 
     try {
-      const templateParams = {
-        from_name: formState.name,
-        from_email: formState.email,
-        subject: formState.subject,
-        message: formState.message,
-      };
+      const response = await fetch("/api/send", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formState),
+      });
 
-      await emailjs.send(
-        "service_noel2003",
-        "template_2u4pa2n",
-        templateParams,
-        "gCqXHMy15x2V5vxb9"
-      );
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || "Failed to send message");
+      }
 
       setSubmitStatus("success");
       setFormState({
@@ -53,7 +52,7 @@ export default function Contact() {
         message: "",
       });
     } catch (error) {
-      console.error("EmailJS Error:", error);
+      console.error("Error sending message:", error);
       setSubmitStatus("error");
     } finally {
       setIsSubmitting(false);

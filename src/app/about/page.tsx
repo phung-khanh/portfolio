@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
-import ava from "@/shared/assets/avatar.jpg";
+import ava from "@/shared/assets/avatar.jpeg";
 import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 

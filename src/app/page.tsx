@@ -1,6 +1,6 @@
 "use client";
 import Type from "@/features/Home/Components/TypeWriter";
-import ava from "@/shared/assets/avatar.jpg";
+import ava from "@/shared/assets/avatar.jpeg";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { DiGithubBadge } from "react-icons/di";

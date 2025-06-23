@@ -1,6 +1,7 @@
 import Footer from "@/features/Home/Components/Footer";
 import Header from "@/features/Home/Components/Header";
 import "@/shared/styles/globals.css";
+import { Analytics } from "@vercel/analytics/next";
 import React from "react";
 
 export const metadata = {
@@ -20,6 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <Analytics />
       <body className="min-h-screen bg-gray-900 text-white flex flex-col">
         <Header />
         <main className="flex-grow">{children}</main>

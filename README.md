@@ -20,6 +20,28 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## Email Configuration (Gmail)
+
+This project uses Gmail SMTP for sending emails. To set up email functionality:
+
+1. Create a `.env.local` file in the root directory
+2. Add the following environment variables:
+
+```env
+GMAIL_USER=your-email@gmail.com
+GMAIL_APP_PASSWORD=your-gmail-app-password
+```
+
+### Setting up Gmail App Password:
+
+1. Go to your [Google Account settings](https://myaccount.google.com/)
+2. Navigate to **Security** > **2-Step Verification** (enable if not already enabled)
+3. Go to **App passwords**
+4. Generate a new app password for "Mail"
+5. Use this generated password as your `GMAIL_APP_PASSWORD`
+
+**Note:** Do not use your regular Gmail password. You must use an App Password for security reasons.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:

@@ -140,7 +140,7 @@ export default function About() {
                   Nang, Vietnam
                 </li>
                 <li className="flex items-center gap-2">
-                  <i className="fas fa-phone text-blue-400"></i> +84 879 321 400
+                  <i className="fas fa-phone text-blue-400"></i> +84 335 413 014
                 </li>
               </ul>
             </div>
